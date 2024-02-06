@@ -4,7 +4,7 @@
 int topla(int a,int b);
 int cikar(int a,int b);
 int carp(int a,int b);
-int bolme(int a,int b);
+float bolme(int a,int b);
 int us(int a,int b);
 int faktoriyel(int x);
 int kare(int x);
@@ -32,7 +32,7 @@ int main() {
                 printf("%d",carp(a,b));
             }
             else if(c=='/'){
-                printf("%d",bolme(a,b));
+                printf("%f",bolme(a,b));
             }
             else if(c='u'){
                 printf("%d",us(a,b));
@@ -80,8 +80,8 @@ int cikar(int a,int b){
 int carp(int a,int b){
     return a*b;
 }
-int bolme(int a,int b){
-    return a/b;
+float bolme(int a,int b){
+    return (float)a/b;
 }
 int us(int a,int b){
     return pow(a,b);
