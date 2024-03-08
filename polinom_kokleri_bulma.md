@@ -5,8 +5,8 @@ c=int(input("c= "))
 delta=b**2-4*a*c
 if(a!=0):
     if(delta>=0):
-        x1=(-b+pow(delta,1/2))/2*a
-        x2=(-b-pow(delta,1/2))/2*a
+        x1=(-b+pow(delta,1/2))/(2*a)
+        x2=(-b-pow(delta,1/2))/(2*a)
         print("Polinom= ",end="")
         if(b==0 and c==0):
             print("x1,x2= 0")
